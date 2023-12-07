@@ -1,9 +1,24 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import PassGen from "../passgen";
+import Colorbtn from "../colorbtn";
+import PropsAll from "../propsall";
 
 export default function Home() {
+    let description ="Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny."
     return (
         <div className="w-full dark:bg-gray-800">
+
+<div className='w-full'>
+      <h1 className='text-slate-900 font-extrabold text-3xl sm:text-3xl lg:text-4xl tracking-tight text-center dark:text-white py-8'>React Componants with TailwindCss</h1> 
+      
+      <PassGen/> 
+      <Colorbtn/>
+      <h1 className="text-center text-2xl font-bold text-gray-900 dark:text-white font-md md:text-3xl mb-6 mt-6">Props</h1>
+      <PropsAll username ="Shaid Islam" job="Sinior Website Developer" details={description} />
+      <PropsAll username ="Yusuf Ali"  job="Manager of Ali Enterprise" details={description} />
+
+</div>        
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
@@ -36,11 +51,6 @@ export default function Home() {
                 </div>
             </aside>
 
-            <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
-            </div>
-
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
         </div>
     );
 }
