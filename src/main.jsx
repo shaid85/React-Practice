@@ -13,6 +13,10 @@ import CurrencyApp from './components/Currency/CurrencyApp.jsx'
 import ContextTest from './components/ContextTest/ContextTest.jsx'
 import ThemeChanger from './components/ThemeChanger/ThemeChanger.jsx'
 import TodoApp from './components/TodoApp/TodoApp.jsx'
+import PriceList from './components/pricelist/PriceList.jsx'
+import { ThemeProvider } from './Context/ThemeContext.js'
+import ThemeContextProvider from './Context/ThemeContextProvider.jsx'
+
 
 // const router = createBrowserRouter([
 //   {
@@ -48,13 +52,16 @@ const router = createBrowserRouter(
         <Route path="themechanger" element={<ThemeChanger />} />
         <Route path="todo" element={<TodoApp />} />
         <Route path="app" element={<App />} />
+        <Route path="priceavg" element={<PriceList />} />
     </Route>
   )
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router}/>
+    <ThemeContextProvider >
+      {/* <App /> */}
+      <RouterProvider router={router}/>
+    </ThemeContextProvider>
   </React.StrictMode>,
 )
