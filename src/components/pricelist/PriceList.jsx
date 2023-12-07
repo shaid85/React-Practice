@@ -110,7 +110,7 @@ const PriceList = () => {
                  Add your positions
              </h3>
              <input type="text" placeholder="Symbol" 
-             className=' p-2 rounded-sm border-2 mr-2'
+             className=' p-2 rounded-sm border-2 mr-2 mb-2'
              value={category} onChange={(event) => setCategory(event.target.value)} list="browsers" name="browser"/>
   <datalist id="browsers">
     <option value="eurusd"></option>
@@ -120,14 +120,14 @@ const PriceList = () => {
     <option value="gbpcad"></option>
   </datalist>
              <input type="text" placeholder="Lot" 
-              className=' p-2 rounded-sm border-2 mr-2'
+              className=' p-2 rounded-sm border-2 mr-2 mb-2'
              value={inputLot} onChange={(event) => setLot(event.target.value)} />
 
              <input type="text" placeholder="Price" 
-              className=' p-2 rounded-sm border-2 mr-2'
+              className=' p-2 rounded-sm border-2 mr-2 mb-2'
              value={inputPrice} onChange={(event) => setPrice(event.target.value)} />
 
-             <button className='text-white items-center px-6 py-3 font-medium bg-blue-500 rounded-lg hover:opacity-75 mr-2' onClick={() => addItem()}>Add List</button>
+             <button className='text-white items-center px-6 py-3 font-medium bg-blue-500 rounded-lg hover:opacity-75 mr-2 mb-2' onClick={() => addItem()}>Add List</button>
              <button className='text-white items-center px-6 py-3 font-medium bg-blue-500 rounded-lg hover:opacity-75' onClick={() => clearAll()}> Clear list</button>
              <br/><br/>
              <div className='pricelist'>
