@@ -29,16 +29,15 @@ export default function Header() {
         }
     }
 
-useEffect(() => {
-    setHidden("max-h-0")
-}, [])
+    useEffect(() => {
+        setHidden("max-h-0")
+    }, [])
 
     const ulclick = () => {
-
-        setTimeout(() => {
-            setHidden("max-h-0")
-            }, 100);
-           
+    setTimeout(() => {
+        setHidden("max-h-0")
+        }, 100);
+            
     }    
     return (
         <header className=" bg-white shadow sticky z-50 top-0 dark:bg-gray-800 text-white">
