@@ -36,7 +36,7 @@ const PassGen = () => {
 
     return (
       <>
-        <div className="w-full max-w-md mx-auto shadow-lg rounded-lg px-4 py-2 my-20  text-white  bg-gray-500">
+        <div className="w-full max-w-md mx-auto shadow-lg rounded-lg px-4 py-2 mt-10 mb-16 text-white  bg-gray-500">
            <h2 className="text-center text-white p-4">Password Generator</h2>
             <div className="flex shadow rounded-lg overflow-hidden mb-4">
               <input 

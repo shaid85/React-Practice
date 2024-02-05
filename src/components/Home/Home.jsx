@@ -4,6 +4,7 @@ import PassGen from "../passgen";
 import Colorbtn from "../colorbtn";
 import PropsAll from "../propsall";
 import NumberFind from "../NumberFind/NumberFind";
+import SearchInput from "../MultiuserSelect/SearchInput";
 
 export default function Home() {
     let description ="Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny."
@@ -16,7 +17,7 @@ export default function Home() {
       <PassGen/> 
       
       <NumberFind />
-
+      <SearchInput />  
       <Colorbtn/>
       <h1 className="text-center text-2xl font-bold text-gray-900 dark:text-white font-md md:text-3xl mb-6 mt-6">Props</h1>
       <PropsAll username ="Shaid Islam" job="Sinior Website Developer" details={description} />

@@ -39,7 +39,7 @@ console.log(doubleNumber);
     <div className=' bg-[#0f172b] py-14 text-white' >
         <div className=" mx-auto max-w-6xl px-4">
             <div className="w-full">
-                <h1 className='text-2xl font-bold text-gray-900 dark:text-white font-md md:text-3xl mb-6 mt-6'>How many Input Number exist 1 to 100</h1>
+                <h1 className='text-2xl font-bold text-white font-md md:text-3xl mb-6 mt-6'>How many Input Number exist 1 to 100</h1>
                 <input
                  className='p-2 rounded-sm border-2 mr-2 mb-2 text-black'   
                  type="text" name="myNum" id="" value={myNum} onChange={(e)=>setMyNum(String(e.target.value))} />
