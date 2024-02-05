@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import PassGen from "../passgen";
 import Colorbtn from "../colorbtn";
 import PropsAll from "../propsall";
+import NumberFind from "../NumberFind/NumberFind";
 
 export default function Home() {
     let description ="Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny."
@@ -13,6 +14,9 @@ export default function Home() {
       <h1 className='text-slate-900 font-extrabold text-3xl sm:text-3xl lg:text-4xl tracking-tight text-center dark:text-white py-8'>React Componants with TailwindCss</h1> 
       
       <PassGen/> 
+      
+      <NumberFind />
+
       <Colorbtn/>
       <h1 className="text-center text-2xl font-bold text-gray-900 dark:text-white font-md md:text-3xl mb-6 mt-6">Props</h1>
       <PropsAll username ="Shaid Islam" job="Sinior Website Developer" details={description} />
