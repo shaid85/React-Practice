@@ -54,7 +54,8 @@ function SearchInput() {
       }
     }
   
-    return <div className="w-full mx-auto max-w-6xl px-4 py-20 flex relative">
+    return <div className="w-full mx-auto max-w-6xl px-4 py-20 flex flex-col relative">
+       <h1 className="w-full text-xl font-bold py-3">Add users from suggestions</h1> 
       <div className=" w-full flex items-center flex-wrap gap-2 p-2 rounded-xl border border-solid border-slate-900">
         {/* plils */}
         {selectedUsers.map((user) => {
