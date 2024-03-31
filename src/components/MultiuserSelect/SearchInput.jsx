@@ -55,8 +55,8 @@ function SearchInput() {
     }
   
     return <div className="w-full mx-auto max-w-6xl px-4 py-20 flex flex-col relative">
-       <h1 className="w-full text-xl font-bold py-3">Add users from suggestions</h1> 
-      <div className=" w-full flex items-center flex-wrap gap-2 p-2 rounded-xl border border-solid border-slate-900">
+       <h1 className="w-full text-xl font-bold py-3 dark:text-white">Add users from suggestions</h1> 
+      <div className=" w-full flex items-center flex-wrap gap-2 p-2 rounded-xl border border-solid border-slate-900 dark:border-white">
         {/* plils */}
         {selectedUsers.map((user) => {
           return (
@@ -71,10 +71,10 @@ function SearchInput() {
         {/* input feild with search suggestions */}
         <div className="">
           
-          <input className=' w-full px-3 py-2 bg-white placeholder-slate-400 focus:outline-none  block rounded-md ' 
+          <input className=' w-full px-3 py-2 bg-white placeholder-slate-400 focus:outline-none  block rounded-md dark:bg-slate-700' 
           id='search'
           ref={inputRef}
-          placeholder='Search for a user'
+          placeholder='Search for a user...'
           type="text" 
           value={searchTerm}
           onChange={(e)=> setSearchTerm(e.target.value)}
