@@ -17,6 +17,7 @@ import PriceList from './components/pricelist/PriceList.jsx'
 import { ThemeProvider } from './Context/ThemeContext.js'
 import ThemeContextProvider from './Context/ThemeContextProvider.jsx'
 import Todoapp from './components/todo-zustand/Todoapp.jsx'
+import CourseApp from './components/course-todo/CourseApp.jsx'
 
 
 // const router = createBrowserRouter([
@@ -55,6 +56,7 @@ const router = createBrowserRouter(
       <Route path="app" element={<App />} />
       <Route path="priceavg" element={<PriceList />} />
       <Route path="todozustand" element={<Todoapp />} />
+      <Route path="coursezustand" element={<CourseApp />} />
     </Route>
   )
 )

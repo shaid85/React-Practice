@@ -5,7 +5,8 @@ const TodoForm = () => {
     const addTodo = useTodoStore((state) => state.addTodo)
 
     const [todoTitle, setTodoTitle] = useState("")
-    const handleCourseSubmit = () => {
+
+    const handleTodoSubmit = () => {
         if (!todoTitle) return alert("please add a course title");
         addTodo({
             id: Math.ceil(Math.random() * 1000000),
@@ -24,7 +25,7 @@ const TodoForm = () => {
                 onChange={(e) => setTodoTitle(e.target.value)}
             />
             <button onClick={() => {
-                handleCourseSubmit();
+                handleTodoSubmit();
             }} type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0">
                 Add
             </button>
